@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
                 imageViewPreview.setImageBitmap(bitmap);
 
-                // Convertir la imagen a byte[]
+                // Convertir la imagen a byte[],
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
                 imageBytes = stream.toByteArray();
